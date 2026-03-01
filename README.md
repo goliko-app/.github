@@ -252,7 +252,7 @@ Powering the guest-facing discovery experience across all four stay categories i
 | ✅ Shipped | LangGraph + LangChain Agentic AI Travel Planner |
 | ✅ Shipped | Stripe global payment integration & automated booking transactions |
 | ✅ Shipped | Drizzle ORM type-safe PostgreSQL data layer |
-| 🔄 In Progress | Native mobile app (React Native / Expo) |
+| 🔄 In Progress | Native mobile app (Flutter) |
 | 🔄 In Progress | AI-powered gear recommendation engine |
 | 📋 Planned | Live group trip coordination with real-time chat |
 | 📋 Planned | Carbon footprint tracker per trip |
