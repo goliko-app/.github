@@ -8,15 +8,15 @@
 </picture>
 
 <h1>GOLIKO</h1>
-<p><em>Next-Generation AI-Powered Camping &amp; Outdoor Lifestyle Super App</em></p>
+<p><em>AI-Driven Travel &amp; Accommodation Ecosystem — Campsites, Homestays, Resorts &amp; Hotels</em></p>
 
 <!-- BADGES -->
 [![Next.js](https://img.shields.io/badge/Next.js-App_Router-black?style=for-the-badge&logo=nextdotjs)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-ACID_Compliant-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Hybrid_JSONB-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![AI Powered](https://img.shields.io/badge/AI-LLM_Integrated-ff6b35?style=for-the-badge&logo=openai&logoColor=white)](#ai-travel-planner)
-[![Meilisearch](https://img.shields.io/badge/Meilisearch-Instant_Search-ff5caa?style=for-the-badge&logo=meilisearch&logoColor=white)](#the-goliko-intelligence-engine)
+[![Generative AI](https://img.shields.io/badge/Generative_AI-LLM_Powered-ff6b35?style=for-the-badge&logo=openai&logoColor=white)](#ai-travel-planner)
+[![Meilisearch](https://img.shields.io/badge/Meilisearch-sub--50ms_Search-ff5caa?style=for-the-badge&logo=meilisearch&logoColor=white)](#the-intelligence-layer)
 [![Offline First](https://img.shields.io/badge/Architecture-Offline_First-16db93?style=for-the-badge)](#offline-first-architecture)
 
 </div>
@@ -25,15 +25,31 @@
 
 ## 🌿 Why GOLIKO?
 
-The outdoor and camping industry is fragmented. Travelers bounce between a dozen apps — booking platforms, social feeds, maps, event listings, and travel planners — none of which talk to each other. Hosts lack smart tools to close sales. Brands have no streamlined way to run exclusive outdoor events. And no platform rewards you for simply getting outside.
+The travel and accommodation industry is fragmented. Travelers bounce between a dozen apps — booking platforms, social feeds, maps, event listings, and travel planners — none of which talk to each other. Hosts lack smart tools to close sales. Brands have no streamlined way to run exclusive outdoor events. And no platform rewards you for your travel engagement.
 
 **GOLIKO is the all-in-one answer.**
 
-We've engineered a single platform that combines a **Campsite Marketplace**, a **Social & Influencer Hub**, and a **Gamified AI Travel Assistant** into one cohesive experience. Every booking, every adventure shared, every login — earns you something. Welcome to the future of outdoor living.
+We've engineered a single **Data-First** platform that unifies a **Multi-Category Stay Marketplace** (Campsites, Homestays, Resorts, and Hotels), a **Social & Influencer Hub**, and a **Gamified AI Travel Assistant** into one cohesive ecosystem. Every booking, every adventure shared, every login — earns you something. An autonomous AI Discovery Engine continuously crawls the web to ensure GOLIKO's listings are always more complete, more accurate, and more up-to-date than any static competitor. Welcome to the future of travel.
 
 ---
 
 ## ✨ Key Features
+
+### 🏘️ Platform Ecosystem — Multi-Category Stay Marketplace
+> *One platform. Every type of stay.*
+
+GOLIKO has evolved beyond campsites into a **unified marketplace for the full spectrum of nature-based and outdoor travel**. All four stay categories share the same intelligent search layer, gamification engine, and AI planner — giving every traveler, from backpackers to luxury resort guests, a first-class experience.
+
+| Category | Description | Audience |
+|---|---|---|
+| 🏕️ **Campsites** | Tent pitches, glamping pods, off-grid spots, RV parks | Backpackers, families, van-lifers |
+| 🏡 **Homestays** | Local host residences, farm stays, eco-cabins | Cultural travelers, slow-travel enthusiasts |
+| 🏨 **Resorts** | Boutique nature resorts, eco-lodges, hillside retreats | Couples, wellness seekers |
+| 🏩 **Hotels** | Nature-adjacent hotels, forest inns, lakefront properties | Business travelers, comfort-first adventurers |
+
+The **Hybrid PostgreSQL + JSONB schema** underpins this diversity — a single, scalable data model handles polymorphic amenity sets (comparing a campfire pit to a resort spa in the same query) without sacrificing ACID compliance or query performance.
+
+---
 
 ### 🤖 AI Travel Planner
 > *Your intelligent adventure co-pilot.*
@@ -71,9 +87,9 @@ A feature-rich booking engine built for both guests and hosts:
 
 ---
 
-## 🎮 Gamification Logic
+## 🎮 Gamification & Retention
 
-GOLIKO's gamification system is the platform's heartbeat. It transforms every interaction into a meaningful progression.
+GOLIKO's gamification system is the platform's heartbeat. It transforms every interaction into a meaningful progression and drives the **AI Point Economy** — where engagement is the currency that unlocks intelligence.
 
 ### Membership Tiers
 
@@ -101,6 +117,8 @@ GOLIKO's gamification system is the platform's heartbeat. It transforms every in
 🤖 Generate Itinerary  →  Costs Points (scales with complexity)
 ```
 
+> **Point-Based AI Access (Point Sink):** Points earned through daily engagement, bookings, and quests are spent to trigger the **AI Travel Planner**. This creates a self-sustaining token economy — casual users earn passively, power users spend purposefully. Higher-complexity itinerary requests (multi-destination, multi-stay-category routes) cost more Points, naturally segmenting users and rewarding loyalty with richer AI output.
+
 ### Ranks, Quests & Badges
 
 - **Ranks** are short-term, seasonal titles earned through competitive leaderboards (e.g., *"Top Camper of the Month"*).
@@ -109,27 +127,27 @@ GOLIKO's gamification system is the platform's heartbeat. It transforms every in
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack 2.0
 
 | Layer | Technology | Rationale |
 |-------|------------|-----------|
 | **Frontend** | Next.js 14 (App Router) | Server Components, streaming, and edge-ready rendering |
 | **Styling** | TailwindCSS + shadcn/ui | Rapid, consistent, accessible UI development |
 | **Language** | TypeScript | Full-stack type safety, critical for complex data models |
-| **Database** | PostgreSQL + JSONB | ACID compliance for financial integrity; JSONB for dynamic event forms |
-| **AI Engine** | LLM Integration | Generative itinerary creation with contextual prompting |
-| **Search** | Meilisearch | Typo-tolerant, sub-50ms instant search with geo-filtering across all listings |
-| **Data Engine** | AI Crawler + LLM Analyzer | Daily autonomous discovery and sanitization of new outdoor spots |
+| **Database** | PostgreSQL + JSONB (Hybrid) | ACID compliance for financial integrity; JSONB handles polymorphic amenity data across all 4 stay categories in a single schema |
+| **Generative AI** | LLM Integration (GPT-4-class) | Bespoke itinerary generation, listing enrichment, and context-aware travel planning |
+| **Search** | Meilisearch | Typo-tolerant, sub-50ms instant search with geo-filtering across all listings and stay categories |
+| **Data Engine** | AI Crawler + LLM Analyzer | Daily autonomous discovery and sanitization of new accommodation listings across all stay categories |
 | **Payments** | Slip Verification API | Real-time, fraud-resistant payment confirmation |
 | **Offline** | Service Workers + Cache API | Offline-first PWA capabilities |
 
 ---
 
-## 🧠 The GOLIKO Intelligence Engine
+## 🧠 The Intelligence Layer
 
 > *Data-Driven. Always Fresh. Always Ahead.*
 
-While most outdoor platforms ship with a static, manually-curated database that grows stale within months, GOLIKO operates a **live, self-updating intelligence layer** that keeps every listing — campsites, resorts, and homestays — razor-sharp and up-to-date. This is the infrastructure advantage that no competitor has.
+While most booking platforms ship with a static, manually-curated database that grows stale within months, GOLIKO operates a **live, self-updating intelligence layer** that keeps every listing — campsites, resorts, homestays, and hotels — razor-sharp and up-to-date. The combination of **Meilisearch** on the read path and the **Autonomous AI Discovery Engine** on the write path creates a compounding data advantage that no static competitor can replicate.
 
 ### How It Works
 
@@ -138,13 +156,16 @@ While most outdoor platforms ship with a static, manually-curated database that 
 │              🤖 Autonomous AI Discovery Cycle            │
 │                    (Runs Daily @ 02:00 UTC)              │
 ├─────────────────────────────────────────────────────────┤
-│  1. Web Crawler       →  Discovers new outdoor spots     │
+│  1. Web Crawler       →  Discovers new outdoor spots,    │
+│                          boutique stays, hidden resorts  │
 │                          from maps, social, directories  │
-│  2. LLM Analyzer      →  Categorizes, enriches, and      │
-│                          sanitizes raw listing data      │
+│  2. LLM Analyzer      →  Categorizes into Campsite /     │
+│                          Homestay / Resort / Hotel,      │
+│                          enriches and sanitizes data     │
 │  3. Data Pipeline     →  Deduplicates, validates coords, │
 │                          scores quality & completeness   │
 │  4. PostgreSQL        →  Persists clean, structured data │
+│                          using Hybrid JSONB schema       │
 │  5. Meilisearch Sync  →  Re-indexes in real-time so      │
 │                          search reflects latest data     │
 └─────────────────────────────────────────────────────────┘
@@ -152,85 +173,27 @@ While most outdoor platforms ship with a static, manually-curated database that 
 
 ### ⚡ Meilisearch — Instant, Intelligent Search
 
-Powering the guest-facing discovery experience is **Meilisearch**, a high-performance, open-source search engine purpose-built for speed and developer ergonomics.
+Powering the guest-facing discovery experience across all four stay categories is **Meilisearch**, a high-performance, open-source search engine purpose-built for speed and developer ergonomics. Every listing ingested by the AI Discovery Engine is immediately re-indexed — ensuring search results are never stale.
 
 | Capability | Detail |
 |---|---|
-| **Search-as-you-type** | Results in **< 50 ms** from the first keystroke |
+| **Search-as-you-type** | Results in **< 50 ms** from the first keystroke, across all stay categories |
 | **Typo Tolerance** | Finds *"Kanchanaburi campsite"* even when users type *"kanchanaburi campzite"* |
-| **Advanced Filtering** | Slice results by amenities, pet-friendly, price range, terrain type, and more |
+| **Advanced Filtering** | Slice results by stay category, amenities, pet-friendly, price range, terrain type, and more |
 | **Geo-Search** | Surface listings within a custom radius of any GPS coordinate |
-| **Faceted Ranking** | Custom ranking rules promote higher-quality, recently-verified listings |
+| **Faceted Ranking** | Custom ranking rules promote higher-quality, recently-verified, and AI-enriched listings |
 
 ### 📡 Data Integrity — Live vs. Static
 
 | | **GOLIKO** | Static Competitors (e.g., Roomscope) |
 |---|---|---|
 | **Update Frequency** | ✅ Daily automated crawl + AI enrichment | ❌ Manual updates, weeks or months old |
-| **New Spot Discovery** | ✅ Autonomous — no human required | ❌ Hosts must self-register |
-| **Data Quality** | ✅ LLM-sanitized, structured, validated | ❌ Raw, inconsistent, user-submitted |
+| **New Spot Discovery** | ✅ Autonomous across all 4 categories — no human required | ❌ Hosts must self-register |
+| **Data Quality** | ✅ LLM-sanitized, structured, validated with polymorphic JSONB | ❌ Raw, inconsistent, user-submitted |
 | **Search Experience** | ✅ Sub-50ms typo-tolerant instant search | ❌ Basic keyword filtering |
 | **Geo Intelligence** | ✅ Radius search + GPS-aware ranking | ❌ Region/province text search only |
 
 > **The result:** GOLIKO's database compounds in value every single day. The longer the platform runs, the larger the moat.
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- **Node.js** `>= 20.x`
-- **pnpm** `>= 9.x` (recommended) or npm / yarn
-- **PostgreSQL** `>= 15.x`
-- **Meilisearch** `>= 1.x` (local instance or [Meilisearch Cloud](https://www.meilisearch.com/cloud))
-- An **LLM API key** (e.g., OpenAI, Anthropic, or a compatible provider)
-
-### Installation
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/goliko-app/goliko.git
-cd goliko
-
-# 2. Install dependencies
-pnpm install
-
-# 3. Configure environment variables
-cp .env.example .env.local
-# → Open .env.local and fill in your database URL, LLM API key, and other secrets
-
-# 4. Set up the database
-pnpm db:migrate    # Run all migrations
-pnpm db:seed       # (Optional) Seed with demo data
-
-# 5. Start the development server
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) to see GOLIKO running locally.
-
-### Environment Variables
-
-```env
-# Database
-DATABASE_URL="postgresql://user:password@localhost:5432/goliko_db"
-
-# AI Engine
-LLM_API_KEY="sk-..."
-LLM_MODEL="gpt-4o"
-
-# Search Engine (Meilisearch)
-MEILISEARCH_HOST="http://localhost:7700"
-MEILISEARCH_MASTER_KEY="your-meilisearch-master-key"
-
-# Payment Verification
-SLIP_VERIFICATION_API_URL="https://api.example.com/verify"
-SLIP_VERIFICATION_API_KEY="..."
-
-# App
-NEXT_PUBLIC_APP_URL="http://localhost:3000"
-```
 
 ---
 
