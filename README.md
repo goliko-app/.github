@@ -16,6 +16,7 @@
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-ACID_Compliant-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![AI Powered](https://img.shields.io/badge/AI-LLM_Integrated-ff6b35?style=for-the-badge&logo=openai&logoColor=white)](#ai-travel-planner)
+[![Meilisearch](https://img.shields.io/badge/Meilisearch-Instant_Search-ff5caa?style=for-the-badge&logo=meilisearch&logoColor=white)](#the-goliko-intelligence-engine)
 [![Offline First](https://img.shields.io/badge/Architecture-Offline_First-16db93?style=for-the-badge)](#offline-first-architecture)
 
 </div>
@@ -117,8 +118,61 @@ GOLIKO's gamification system is the platform's heartbeat. It transforms every in
 | **Language** | TypeScript | Full-stack type safety, critical for complex data models |
 | **Database** | PostgreSQL + JSONB | ACID compliance for financial integrity; JSONB for dynamic event forms |
 | **AI Engine** | LLM Integration | Generative itinerary creation with contextual prompting |
+| **Search** | Meilisearch | Typo-tolerant, sub-50ms instant search with geo-filtering across all listings |
+| **Data Engine** | AI Crawler + LLM Analyzer | Daily autonomous discovery and sanitization of new outdoor spots |
 | **Payments** | Slip Verification API | Real-time, fraud-resistant payment confirmation |
 | **Offline** | Service Workers + Cache API | Offline-first PWA capabilities |
+
+---
+
+## 🧠 The GOLIKO Intelligence Engine
+
+> *Data-Driven. Always Fresh. Always Ahead.*
+
+While most outdoor platforms ship with a static, manually-curated database that grows stale within months, GOLIKO operates a **live, self-updating intelligence layer** that keeps every listing — campsites, resorts, and homestays — razor-sharp and up-to-date. This is the infrastructure advantage that no competitor has.
+
+### How It Works
+
+```
+┌─────────────────────────────────────────────────────────┐
+│              🤖 Autonomous AI Discovery Cycle            │
+│                    (Runs Daily @ 02:00 UTC)              │
+├─────────────────────────────────────────────────────────┤
+│  1. Web Crawler       →  Discovers new outdoor spots     │
+│                          from maps, social, directories  │
+│  2. LLM Analyzer      →  Categorizes, enriches, and      │
+│                          sanitizes raw listing data      │
+│  3. Data Pipeline     →  Deduplicates, validates coords, │
+│                          scores quality & completeness   │
+│  4. PostgreSQL        →  Persists clean, structured data │
+│  5. Meilisearch Sync  →  Re-indexes in real-time so      │
+│                          search reflects latest data     │
+└─────────────────────────────────────────────────────────┘
+```
+
+### ⚡ Meilisearch — Instant, Intelligent Search
+
+Powering the guest-facing discovery experience is **Meilisearch**, a high-performance, open-source search engine purpose-built for speed and developer ergonomics.
+
+| Capability | Detail |
+|---|---|
+| **Search-as-you-type** | Results in **< 50 ms** from the first keystroke |
+| **Typo Tolerance** | Finds *"Kanchanaburi campsite"* even when users type *"kanchanaburi campzite"* |
+| **Advanced Filtering** | Slice results by amenities, pet-friendly, price range, terrain type, and more |
+| **Geo-Search** | Surface listings within a custom radius of any GPS coordinate |
+| **Faceted Ranking** | Custom ranking rules promote higher-quality, recently-verified listings |
+
+### 📡 Data Integrity — Live vs. Static
+
+| | **GOLIKO** | Static Competitors (e.g., Roomscope) |
+|---|---|---|
+| **Update Frequency** | ✅ Daily automated crawl + AI enrichment | ❌ Manual updates, weeks or months old |
+| **New Spot Discovery** | ✅ Autonomous — no human required | ❌ Hosts must self-register |
+| **Data Quality** | ✅ LLM-sanitized, structured, validated | ❌ Raw, inconsistent, user-submitted |
+| **Search Experience** | ✅ Sub-50ms typo-tolerant instant search | ❌ Basic keyword filtering |
+| **Geo Intelligence** | ✅ Radius search + GPS-aware ranking | ❌ Region/province text search only |
+
+> **The result:** GOLIKO's database compounds in value every single day. The longer the platform runs, the larger the moat.
 
 ---
 
@@ -129,6 +183,7 @@ GOLIKO's gamification system is the platform's heartbeat. It transforms every in
 - **Node.js** `>= 20.x`
 - **pnpm** `>= 9.x` (recommended) or npm / yarn
 - **PostgreSQL** `>= 15.x`
+- **Meilisearch** `>= 1.x` (local instance or [Meilisearch Cloud](https://www.meilisearch.com/cloud))
 - An **LLM API key** (e.g., OpenAI, Anthropic, or a compatible provider)
 
 ### Installation
@@ -165,6 +220,10 @@ DATABASE_URL="postgresql://user:password@localhost:5432/goliko_db"
 LLM_API_KEY="sk-..."
 LLM_MODEL="gpt-4o"
 
+# Search Engine (Meilisearch)
+MEILISEARCH_HOST="http://localhost:7700"
+MEILISEARCH_MASTER_KEY="your-meilisearch-master-key"
+
 # Payment Verification
 SLIP_VERIFICATION_API_URL="https://api.example.com/verify"
 SLIP_VERIFICATION_API_KEY="..."
@@ -179,6 +238,8 @@ NEXT_PUBLIC_APP_URL="http://localhost:3000"
 
 | Status | Feature |
 |--------|---------|
+| ✅ Shipped | Meilisearch instant search with geo & faceted filtering |
+| ✅ Shipped | Autonomous AI daily crawler & LLM data enrichment pipeline |
 | 🔄 In Progress | Native mobile app (React Native / Expo) |
 | 🔄 In Progress | AI-powered gear recommendation engine |
 | 📋 Planned | Live group trip coordination with real-time chat |
