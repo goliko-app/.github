@@ -19,11 +19,12 @@
 [![Google Gemini](https://img.shields.io/badge/Google_Gemini-Generative_AI-4285f4?style=for-the-badge&logo=google&logoColor=white)](#agentic-ai-orchestration)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-+-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![Drizzle ORM](https://img.shields.io/badge/Drizzle_ORM-Type--Safe-c5f74f?style=for-the-badge&logo=drizzle&logoColor=black)](https://orm.drizzle.team/)
-[![Meilisearch](https://img.shields.io/badge/Meilisearch-sub--50ms_Search-ff5caa?style=for-the-badge&logo=meilisearch&logoColor=white)](#the-intelligence-layer)
 [![Stripe](https://img.shields.io/badge/Stripe-Payments-635bff?style=for-the-badge&logo=stripe&logoColor=white)](#secure-payments--monetization)
-[![Offline First](https://img.shields.io/badge/Architecture-Offline_First-16db93?style=for-the-badge)](#offline-first-architecture)
 
 </div>
+
+<h2>Sponsorship</h2>
+<a href="https://railway.com?referralCode=AENdSO" target="_blank"><img src="https://railway.com/brand/logotype-light.png" style="height: 50px;" /></a>
 
 ---
 
