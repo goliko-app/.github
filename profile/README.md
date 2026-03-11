@@ -7,7 +7,6 @@
   <img alt="GOLIKO Logo" src="https://placehold.co/200x80/f0f4f8/1a1a2e?text=GOLIKO&font=montserrat" width="200">
 </picture>
 
-<h1>GOLIKO</h1>
 <p><em>Autonomous AI Travel Agent &amp; Accommodation Ecosystem — Campsites, Homestays, Resorts &amp; Hotels</em></p>
 
 <!-- BADGES -->
